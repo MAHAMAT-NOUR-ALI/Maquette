@@ -17,6 +17,7 @@ body {
     padding: 10px;
     background-color: gray;
     display: flex;
+    position: fixed;
 }
 
 .nom_titre {
