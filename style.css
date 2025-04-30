@@ -17,7 +17,6 @@ body {
     padding: 10px;
     background-color: gray;
     display: flex;
-    position: fixed;
 }
 
 .nom_titre {
@@ -126,6 +125,7 @@ body {
     background-color: blue;
 }
 
+ 
 .produit3 {
     width: 100%;
     height: 30vh;
@@ -134,24 +134,43 @@ body {
     justify-content: space-between;
     align-items: center;
 
+}   
+
+.achat {
+    width: 32.5%;
+    height: 15vh;
+    text-align: center;
+    padding: 22px;
+    margin: auto;
+    background-color: green;
+    border:3px solid white;
+    border-radius: 20px;
 }
 
-.conteneur2 {
-    width: 30%;
-    height: 90%;
-    background-color: blue;
+.achat p {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
 }
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.814);
     width: 100%;
     height: auto;
     padding: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer_titre {
+.div_footer {
+    width: 22%;
+    border-color: azure;
     color: white;
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
+}
+
+.div_footer > a{
+    font-size: 120%;
+    text-decoration: none;
+    color: white;
 }
