@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,19 +22,80 @@
     </section>
 
 
+   <section id="bloc-2">
 
-    <section class="home">
-        <div class="home1">
-
+    <div class="container">
+        <div class="image">
+            <img src="img/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="">
+             <div class="description">
+                <p>"Des graines fraîchement semées dans un sol fertile, symbolisant le début d’un cycle de croissance durable et prometteur."</p>
+            </div>
         </div>
-        <div class="home2">
-
+        
+        <div class="image">
+            <img src="img/agri1.webp" alt="">
+            <div class="description">
+                <p>"Un logiciel innovant dédié à l’agriculture moderne, permettant de planifier, suivre et optimiser les activités agricoles, de la semence à la récolte, tout en facilitant la gestion des ressources."</p>
+            </div>
+            
         </div>
-    </section>
 
+        <div class="image">
+            <img src="img/agri4.avif" alt="">
+            <div class="description">
+                <p>
+                      "une solution numerique au service de la nature"
+                </p>
+            </div>
+        </div>
 
+        <div class="image">
+           <img src="img/agri5.jpg" alt="">
+           <div class="description">
+                        <p>
+                            "Un puissant tracteur agricole en action, rassemblant et aérant les herbes sèches dans les champs, facilitant leur transformation en fourrage de qualité pour l’élevage."
+                        </p>
+           </div>
+        </div>
+         
+        <div class="image">
+          <img src="img/agri6.jpg" alt=""> 
+          <div class="description">
+            <p>
+                "Ce logiciel d’agriculture intelligent permet aux agriculteurs de planifier et gérer efficacement leurs activités agricoles. Il intègre: le suivi des cultures, la gestion des stocks, la météo, l’analyse des rendements."
+            </p>
+          </div>
+        </div>
 
+         <div class="image">
+             <img src="img/istockphoto-1805849861-2048x2048.webp" alt="">
+             <div class="description">
+                <p>
+                    "Vue par drone d’un champ en pleine culture, où un tracteur trace des sillons réguliers. L’image illustre la mécanisation agricole moderne et l’efficacité du travail au sol."
+                </p>
+             </div>
+         </div>
 
+       <div class="button">
+           <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+           <a onclick="nextimg(1)" class="next">&#10095;</a>
+           
+       </div>
+
+       <div class="dots">
+           <span class="dot" onclick="currentSlide(1)"></span> 
+           <span class="dot" onclick="currentSlide(2)"></span> 
+           <span class="dot" onclick="currentSlide(3)"></span> 
+           <span class="dot" onclick="currentSlide(4)"></span> 
+           <span class="dot" onclick="currentSlide(5)"></span> 
+           <span class="dot" onclick="currentSlide(6)"></span>    
+       </div>
+    </div>
+
+     <div class="home2">
+
+    </div>
+   </section>
 
     <section class="about">
         <div class="about1">
@@ -98,5 +159,6 @@
     <section class="footer">
         <h1 class="footer_titre">Footer</h1>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
