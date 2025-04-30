@@ -12,34 +12,71 @@ body {
 }
 
 .header {
-    width: 100%;
+    width: 99%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     background-color: gray;
     display: flex;
+<<<<<<< HEAD
+    position: fixed;
+
+=======
+>>>>>>> e8723f737687f93723d307543b2036a9ba36064e
 }
 
 .nom_titre {
-    text-align: center;
-    width: 30%;
+
+    width: 25%;
+    border-radius: 20px;
 }
 
-.nom_titre > h1 {
-    font-size: 60px;
+
+.img_logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
 }
 
-.nav {
-    width: 70%;
-    display: flex;
-    padding: 10px;
+.header  > .mon_titre > img {
+    border-radius: 20px;
+}
+
+
+
+.nav1 {
+
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;  
+    width: 45%;
+    font-size: 30px;
+    display: flex;
+    
+ 
 }
 
-.nav > a {
-    font-size: 32px;
+.nav1 > a {
     text-decoration: none;
-    color: black;
+    color: white;
+
+
+}
+    
+
+
+.nav2 {
+    align-items: center;
+    justify-content: right;  
+    width: 30%;
+    display: flex
+}
+
+.nav2 > a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 /* section home */
