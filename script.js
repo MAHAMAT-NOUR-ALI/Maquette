@@ -52,50 +52,68 @@ function displayimg(n){
   }
 
 
-  
+// initialisation du dictionnaire  (les produits sont des clés et le nombre de click sont les valeur de ces clés)
   let Dictionnaire = {};
 
-  let valeur_01 = 0
 
-  
+  // Définition de la fonction qui permettra l'ajout d'élément au panier en incrémentant le nombre d'elts et en les ajoutant à la liste (panier)
 function addproduit (nom_produit) {
   
 
+
+  // incrémentation
 
   let qte = document.getElementById("quantite");
   quantite = parseInt(qte.innerHTML);
   qte.innerHTML = quantite + 1;
 
 
-                  
+  
+  // on teste si l'elt click existe ou pas 
 
   if (nom_produit in Dictionnaire) {
     
-
+    // si oui on incremente sa valeur (+1)
     Dictionnaire[nom_produit]+= 1;
 
   } else {
+
+
+    // si non on l'ajoute au dic avec un valeur = 1
+
 
     Dictionnaire[nom_produit] = 1;
 
     
   };
 
-  const produits_nbr = document.getElementById("mes_produits");
 
-  const anciensElements = produits_nbr.querySelectorAll("li");
+  // on récuppère notre liste via la methode getelementbyid et on attribut sa valeur à la cons produits
+  const produits = document.getElementById("mes_produits");
 
+  // on récupère aussi tous les listes (s'il y'en a)
+  const anciensElements = produits.querySelectorAll("li");
+
+  // on parcours en testant si le produit clické existe 
   anciensElements.forEach(li => {
     if (li.textContent.startsWith(`${nom_produit}:`)) {
+
+      // si oui on supprime la liste qui le contient 
       produits_nbr.removeChild(li);
     }
   });
 
-  const valeur = Dictionnaire[nom_produit];
+  // on ajoute le produit et sa valeur dans le dic  à la cons produit_act
+  const produit_act = Dictionnaire[nom_produit];
 
-    const elment_list = document.createElement("li");
-    elment_list.textContent = `${nom_produit}: ${valeur}`;
-    produits_nbr.appendChild(elment_list);
+  // on cré un nouveau elt 
+  const new_li = document.createElement("li");
+
+  // on ajoute du contenu le produit et sa valeur à notre nouveau elt li crée
+  new_li.textContent = `${nom_produit}: ${produit_act}`;
+  
+  // et en fin on l'ajoute a son parent ul contenu dans la cons produits
+  produits.appendChild(new_li);
 }
 
 

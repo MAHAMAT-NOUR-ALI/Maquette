@@ -146,7 +146,7 @@ ul li, ul a {
 
 .home {
     width: 100%;
-    height: 70vh;
+    min-height: 75vh;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -254,7 +254,7 @@ ul li, ul a {
 
 .home1 {
     width: 67%;
-    height: 70vh;
+    min-height: 70vh;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
@@ -269,17 +269,63 @@ ul li, ul a {
     color: bisque;
 }
 
+
+
 .home2 p {
     text-align: left;
     margin: 10px;
 }
 
-.img_agri {
-    width: 100%;
+.home2child2 {
     height: 50%;
-    object-fit: cover;
-    border-radius: inherit;
+    width: 100%;
+    padding-bottom: 20px;
 }
+
+.home2child2 div {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+
+
+.home2child2 div input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.home2child2 div textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    
+}
+
+.home2child2 div button {
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px ;
+    box-shadow: 0 0 50px black;
+}
+
+
+.home2child2 div button:hover {
+    box-shadow: 0 0 50px greenyellow,0 0 100px greenyellow,0 0 150px greenyellow, 0 0 200px greenyellow ;
+}
+
+
+.home2child1 {
+    height: 50%;
+    width: 100%;
+}
+
 
 
 /* about */
@@ -287,7 +333,7 @@ ul li, ul a {
 .about{
     margin-top: 20px;
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,7 +344,7 @@ ul li, ul a {
 
 .about1{
     width: 33%;
-    height: 100%;
+    min-height: 50vh;
     border-right: 2px solid white;
     text-align: center;
 
@@ -427,9 +473,15 @@ ul li, ul a {
 
 
 button {
+    margin-top: 10px;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px ;
+    box-shadow: 0 0 50px black;
+}
+
+button:hover {
+    box-shadow: 0 0 50px greenyellow,0 0 100px greenyellow,0 0 150px greenyellow, 0 0 200px greenyellow ;
 }
 
 
@@ -473,12 +525,12 @@ button {
     text-align: center;
     padding: 22px;
     margin: auto;
-    background-color: green;
-    border:3px solid white;
+    border:5px solid white;
     border-radius: 20px;
 }
 
 .achat p {
+    margin-top: 20px;
     font-size: 32px;
     font-weight: 900;
     color: white;
@@ -487,10 +539,9 @@ button {
 
 .footer {
    flex-shrink: 0;
-    border-top: 2px solid rgba(172, 255, 47, 0.627);
+    border-top: 5px solid white;
     width: 100%;
     height: 30vh;
-    background-color: black;
     color: white;
     display: flex;
     padding: 15px;
@@ -499,14 +550,22 @@ button {
 }
 
 .div_footer {
-    width: 25%;
+    width: auto;
     border-color: azure;
-    color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    
 }
 
 
 .div_footer > a{
-    font-size: 120%;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.div_footer > a:hover{
     text-decoration: none;
     color: white;
     padding: 10px;

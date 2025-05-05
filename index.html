@@ -110,15 +110,40 @@
         
 
         <div class="home2">
-            <img src="img_agri.jpeg" alt="" class="img_agri">
-            <h1>A propos :</h1>
-            <p>AGRI DIGITAL est une plateforme en ligne complète pour les professionnels de l'agriculture et les passionnés. Elle propose un large catalogue de produits agricoles de qualité (semences, fertilisants), avec un système d'achat en ligne simple et sécurisé.
+            <div class="homechild1">
 
-                Plus qu'une boutique, le site se veut une ressource informative avec des fiches conseils, des articles de blog et un service client expert.
-                
-                L'engagement du site est axé sur la qualité, la durabilité et le succès de ses clients, en offrant des produits fiables et en promouvant des pratiques agricoles responsables.
-                
-                AGRI DIGITAL invite les utilisateurs à rejoindre sa communauté pour faciliter leurs approvisionnements et les accompagner dans leur activité agricole.</p>
+                <h1>A propos :</h1>
+                <p>AGRI DIGITAL est une plateforme en ligne complète pour les professionnels de l'agriculture et les passionnés. Elle propose un large catalogue de produits agricoles de qualité (semences, fertilisants), avec un système d'achat en ligne simple et sécurisé.
+    
+                    Plus qu'une boutique, le site se veut une ressource informative avec des fiches conseils, des articles de blog et un service client expert.
+                    
+                    L'engagement du site est axé sur la qualité, la durabilité et le succès de ses clients, en offrant des produits fiables et en promouvant des pratiques agricoles responsables.
+                    
+                    AGRI DIGITAL invite les utilisateurs à rejoindre sa communauté pour faciliter leurs approvisionnements et les accompagner dans leur activité agricole.</p>
+
+            </div>
+
+            <div class="home2child2">
+                <h2>Authentifiez-Vous</h2>
+
+                <form action="" >
+
+                    <div>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email"  required>
+                    </div>
+                    <br>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Message" ></textarea>
+                    </div>
+                    <br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            
+            </div>
 
         </div>
 
@@ -138,7 +163,7 @@
 
         <div class="about1">
             <h2>Valeur</h2>
-            <p>Qualité et Excellence : Offrir des produits agricoles de haute qualité et viser l'excellence dans tout ce que nous faisons.
+            <p >Qualité et Excellence : Offrir des produits agricoles de haute qualité et viser l'excellence dans tout ce que nous faisons.
 
                 Confiance et Partenariat : Construire des relations durables et collaboratives avec nos clients et partenaires.
                 
@@ -184,7 +209,7 @@
             <img src="ananas.jpeg" alt="Ananas" class="article">
             <h2 class="titre_article">ANANAS</h2>
             <div class="button_article">
-                <button>Ajouter</button>
+                <button onclick= "addproduit('ANANAS')">Ajouter</button>
             </div> 
         </div>
 
@@ -192,14 +217,14 @@
             <img src="grenade.jpeg" alt="mille" class="article">
             <h2 class="titre_article">GRENADE</h2>
             <div class="button_article">
-                <button>Ajouter</button>
+                <button onclick= "addproduit('GRENADE')">Ajouter</button>
             </div>  
         </div>
         <div class="conteneur0">
             <img src="olive.jpeg" alt="olive" class="article">
             <h2 class="titre_article">OLIVE</h2>
             <div class="button_article">
-                <button onclick="alert('Le produit OLIVE a été ajouter au panier')">Ajouter</button>
+                <button onclick= "addproduit('OLIVE')">Ajouter</button>
             </div> 
         </div>
 
@@ -207,7 +232,7 @@
             <img src="datte.jpeg" alt="datte" class="article">
             <h2 class="titre_article">DATTE</h2>
             <div class="button_article">
-                <button onclick="alert('Le produit DATTE a été ajouter au panier')">Ajouter</button>
+                <button onclick= "addproduit('DATTE')">Ajouter</button>
             </div> 
         </div>
     </section>
@@ -312,7 +337,7 @@
     </section> 
 
 
-    <h1>Contact:</h1>
+   
     <section class="footer">
         <div class="div_footer">
             <p>Email : pazeuzahdjoutchouamone@gmail.com </p>
