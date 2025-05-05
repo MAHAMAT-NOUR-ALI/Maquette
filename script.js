@@ -50,3 +50,53 @@ function displayimg(n){
     slides[SlideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000);
   }
+
+
+  
+  let Dictionnaire = {};
+
+  let valeur_01 = 0
+
+  
+function addproduit (nom_produit) {
+  
+
+
+  let qte = document.getElementById("quantite");
+  quantite = parseInt(qte.innerHTML);
+  qte.innerHTML = quantite + 1;
+
+
+                  
+
+  if (nom_produit in Dictionnaire) {
+    
+
+    Dictionnaire[nom_produit]+= 1;
+
+  } else {
+
+    Dictionnaire[nom_produit] = 1;
+
+    
+  };
+
+  const produits_nbr = document.getElementById("mes_produits");
+
+  const anciensElements = produits_nbr.querySelectorAll("li");
+
+  anciensElements.forEach(li => {
+    if (li.textContent.startsWith(`${nom_produit}:`)) {
+      produits_nbr.removeChild(li);
+    }
+  });
+
+  const valeur = Dictionnaire[nom_produit];
+
+    const elment_list = document.createElement("li");
+    elment_list.textContent = `${nom_produit}: ${valeur}`;
+    produits_nbr.appendChild(elment_list);
+}
+
+
+

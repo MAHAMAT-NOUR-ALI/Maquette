@@ -8,150 +8,296 @@
 </head>
 <body>
 
-<section class="header">
-    <div class="nom_titre">
+    <section class="header">
+        <div class="nom_titre">
 
-        <img src="agri.jpg" alt="logo" class="img_logo">
-        <h1 style="color: white; ">AGRI-DIGITAL</h1>
-    </div>
+            <img src="agri.jpg" alt="logo" class="img_logo">
+            <h1 style="color: white; ">AGRI-DIGITAL</h1>
+        </div>
 
-    <div class="nav1">
+        <div class="nav1">
         
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Trad</a>
         
-    </div>
+        </div>
         
-    <div class="nav2"> 
-            <a href="#">Card:0</a>
+        <div class="nav2"> 
+            <a href="#" class="panier">Card: <span id="quantite">0</span></a>
+            <ul id="mes_produits">
+            </ul>
+       
+        </div>
+        
+    </section>
+
+    
+    <section class="home">
+
+        <div class="home1">
+            <section id="bloc">
+
+                <div class="container001">
+                    <div class="image">
+                        <img src="img/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="">
+                         <div class="description">
+                            <p>"Des graines fraîchement semées dans un sol fertile, symbolisant le début d’un cycle de croissance durable et prometteur."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="image">
+                        <img src="img/agri1.webp" alt="">
+                        <div class="description">
+                            <p>"Un logiciel innovant dédié à l’agriculture moderne, permettant de planifier, suivre et optimiser les activités agricoles, de la semence à la récolte, tout en facilitant la gestion des ressources."</p>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="image">
+                        <img src="img/agri4.avif" alt="">
+                        <div class="description">
+                            <p>
+                                  "une solution numerique au service de la nature"
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="image">
+                       <img src="img/agri5.jpg" alt="">
+                       <div class="description">
+                                    <p>
+                                        "Un puissant tracteur agricole en action, rassemblant et aérant les herbes sèches dans les champs, facilitant leur transformation en fourrage de qualité pour l’élevage."
+                                    </p>
+                       </div>
+                    </div>
+                     
+                    <div class="image">
+                      <img src="img/agri6.jpg" alt=""> 
+                      <div class="description">
+                        <p>
+                            "Ce logiciel d’agriculture intelligent permet aux agriculteurs de planifier et gérer efficacement leurs activités agricoles. Il intègre: le suivi des cultures, la gestion des stocks, la météo, l’analyse des rendements."
+                        </p>
+                      </div>
+                    </div>
+            
+                     <div class="image">
+                         <img src="img/istockphoto-1805849861-2048x2048.webp" alt="">
+                         <div class="description">
+                            <p>
+                                "Vue par drone d’un champ en pleine culture, où un tracteur trace des sillons réguliers. L’image illustre la mécanisation agricole moderne et l’efficacité du travail au sol."
+                            </p>
+                         </div>
+                     </div>
+            
+                   <div class="button">
+                       <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                       <a onclick="nextimg(1)" class="next">&#10095;</a>
+                       
+                   </div>
+            
+                   <div class="dots">
+                       <span class="dot" onclick="currentSlide(1)"></span> 
+                       <span class="dot" onclick="currentSlide(2)"></span> 
+                       <span class="dot" onclick="currentSlide(3)"></span> 
+                       <span class="dot" onclick="currentSlide(4)"></span> 
+                       <span class="dot" onclick="currentSlide(5)"></span> 
+                       <span class="dot" onclick="currentSlide(6)"></span>    
+                   </div>
+                </div>
+            </section>
+        </div>
+        
+
+        <div class="home2">
+            <img src="img_agri.jpeg" alt="" class="img_agri">
+            <h1>A propos :</h1>
+            <p>AGRI DIGITAL est une plateforme en ligne complète pour les professionnels de l'agriculture et les passionnés. Elle propose un large catalogue de produits agricoles de qualité (semences, fertilisants), avec un système d'achat en ligne simple et sécurisé.
+
+                Plus qu'une boutique, le site se veut une ressource informative avec des fiches conseils, des articles de blog et un service client expert.
+                
+                L'engagement du site est axé sur la qualité, la durabilité et le succès de ses clients, en offrant des produits fiables et en promouvant des pratiques agricoles responsables.
+                
+                AGRI DIGITAL invite les utilisateurs à rejoindre sa communauté pour faciliter leurs approvisionnements et les accompagner dans leur activité agricole.</p>
+
+        </div>
+
+    </section>
+
+   
+    <section class="about">
+        <div class="about1">
+            <h2>Mission</h2>
+            <p>Notre mission est d'être le partenaire privilégié des acteurs du monde agricole. Nous aspirons à établir une relation de confiance durable, en comprenant leurs besoins et en leur offrant des solutions adaptées. Plus qu'un simple fournisseur, nous voulons être un allié pour chaque agriculteur, exploitant et professionnel du secteur.
+
+                Nous fournissons une plateforme en ligne complète et conviviale pour l'approvisionnement en produits agricoles de qualité. Notre site intuitif permet de trouver facilement une large gamme de produits rigoureusement sélectionnés pour leur performance. Nous nous engageons à offrir des produits fiables qui contribuent au succès des cultures et des élevages de nos clients.
+                
+                Au-delà de la vente, nous enrichissons notre offre avec des connaissances et un accompagnement expert. Nous mettons à disposition des informations pratiques, des conseils avisés et un service client compétent pour aider nos utilisateurs à optimiser leurs pratiques et à prendre des décisions éclairées, contribuant ainsi à une agriculture performante, durable et prospère.</p>
+        </div>
+
+
+        <div class="about1">
+            <h2>Valeur</h2>
+            <p>Qualité et Excellence : Offrir des produits agricoles de haute qualité et viser l'excellence dans tout ce que nous faisons.
+
+                Confiance et Partenariat : Construire des relations durables et collaboratives avec nos clients et partenaires.
+                
+                Expertise et Conseil : Fournir une connaissance approfondie du secteur et des conseils personnalisés.
+                
+                Innovation et Progrès : Rechercher des solutions modernes et encourager des pratiques durables.
+                
+                Accessibilité et Simplicité : Rendre l'achat et l'information faciles grâce à notre plateforme conviviale.
+                
+                Durabilité et Responsabilité : Promouvoir une agriculture respectueuse de l'environnement.
+                
+                Orientation Client : Placer la satisfaction et le succès de nos clients au centre de nos actions.</p>
+        </div>
+
+
+        <div class="about1" id="active">
+            <h2>activité</h2>
+            <p>Vente en ligne d'une large gamme de produits agricoles (semences, fertilisants, etc.) avec gestion complète des commandes et de la livraison.
+                Fourniture de contenu informatif et éducatif (fiches conseils, articles, guides) pour accompagner les clients.
+                Service client et support technique pour répondre aux questions et résoudre les problèmes.
+                Marketing et communication pour promouvoir le site et les produits.
+                Gestion des relations fournisseurs pour assurer la qualité et la disponibilité des produits.
+                Analyse de données et amélioration continue pour optimiser l'offre et l'expérience utilisateur.
+                Développement de partenariats avec d'autres acteurs du secteur.
+                Veille concurrentielle et sectorielle pour rester informé des tendances.
+                En bref, vous êtes à la fois un e-commerce spécialisé, une source d'information et un fournisseur de services pour le monde agricole.
+            </p>
+            
+        </div>
+
+
+    </section>
+
+    
+
+
+    <div class="montitre_conteneur_tendance">
+        <h1 class="titre_produit_tendance">Produits Tendences</h1>
+    </div>
+
+    <section class="produit_tendance">
+        <div class="conteneur0">
+            <img src="ananas.jpeg" alt="Ananas" class="article">
+            <h2 class="titre_article">ANANAS</h2>
+            <div class="button_article">
+                <button>Ajouter</button>
+            </div> 
+        </div>
+
+        <div class="conteneur0">
+            <img src="grenade.jpeg" alt="mille" class="article">
+            <h2 class="titre_article">GRENADE</h2>
+            <div class="button_article">
+                <button>Ajouter</button>
+            </div>  
+        </div>
+        <div class="conteneur0">
+            <img src="olive.jpeg" alt="olive" class="article">
+            <h2 class="titre_article">OLIVE</h2>
+            <div class="button_article">
+                <button onclick="alert('Le produit OLIVE a été ajouter au panier')">Ajouter</button>
+            </div> 
+        </div>
+
+        <div class="conteneur0">
+            <img src="datte.jpeg" alt="datte" class="article">
+            <h2 class="titre_article">DATTE</h2>
+            <div class="button_article">
+                <button onclick="alert('Le produit DATTE a été ajouter au panier')">Ajouter</button>
+            </div> 
         </div>
     </section>
 
 
-   <section id="bloc-2">
 
-    <div class="container">
-        <div class="image">
-            <img src="img/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="">
-             <div class="description">
-                <p>"Des graines fraîchement semées dans un sol fertile, symbolisant le début d’un cycle de croissance durable et prometteur."</p>
-            </div>
-        </div>
-        
-        <div class="image">
-            <img src="img/agri1.webp" alt="">
-            <div class="description">
-                <p>"Un logiciel innovant dédié à l’agriculture moderne, permettant de planifier, suivre et optimiser les activités agricoles, de la semence à la récolte, tout en facilitant la gestion des ressources."</p>
-            </div>
-            
-        </div>
-
-        <div class="image">
-            <img src="img/agri4.avif" alt="">
-            <div class="description">
-                <p>
-                      "une solution numerique au service de la nature"
-                </p>
-            </div>
-        </div>
-
-        <div class="image">
-           <img src="img/agri5.jpg" alt="">
-           <div class="description">
-                        <p>
-                            "Un puissant tracteur agricole en action, rassemblant et aérant les herbes sèches dans les champs, facilitant leur transformation en fourrage de qualité pour l’élevage."
-                        </p>
-           </div>
-        </div>
-         
-        <div class="image">
-          <img src="img/agri6.jpg" alt=""> 
-          <div class="description">
-            <p>
-                "Ce logiciel d’agriculture intelligent permet aux agriculteurs de planifier et gérer efficacement leurs activités agricoles. Il intègre: le suivi des cultures, la gestion des stocks, la météo, l’analyse des rendements."
-            </p>
-          </div>
-        </div>
-
-         <div class="image">
-             <img src="img/istockphoto-1805849861-2048x2048.webp" alt="">
-             <div class="description">
-                <p>
-                    "Vue par drone d’un champ en pleine culture, où un tracteur trace des sillons réguliers. L’image illustre la mécanisation agricole moderne et l’efficacité du travail au sol."
-                </p>
-             </div>
-         </div>
-
-       <div class="button">
-           <a onclick="nextimg(-1)" class="prev">&#10094;</a>
-           <a onclick="nextimg(1)" class="next">&#10095;</a>
-           
-       </div>
-
-       <div class="dots">
-           <span class="dot" onclick="currentSlide(1)"></span> 
-           <span class="dot" onclick="currentSlide(2)"></span> 
-           <span class="dot" onclick="currentSlide(3)"></span> 
-           <span class="dot" onclick="currentSlide(4)"></span> 
-           <span class="dot" onclick="currentSlide(5)"></span> 
-           <span class="dot" onclick="currentSlide(6)"></span>    
-       </div>
-    </div>
-
-     <div class="home2">
-
-    </div>
-   </section>
-
-    <section class="about">
-        <div class="about1">
-
-        </div>
 
     <div class="montitre_conteneur">
         <h1 class="titre_produit">Produits</h1>
     </div>
+
     <section class="produit1">
         
         <div class="conteneur">
-
+            <img src="sésame.jpeg" alt="sesame" class="article">
+            <h2 class="titre_article">Sésame</h2>
+            <div class="button_article">
+                <button  onclick= "addproduit('Sésame')">Ajouter</button>
+            </div> 
         </div>
 
         <div class="conteneur">
-            
+            <img src="mille.jpeg" alt="mille" class="article">
+            <h2 class="titre_article">Mille</h2>
+            <div class="button_article">
+                <button   onclick= "addproduit('Mille')">Ajouter</button>
+            </div>  
         </div>
         <div class="conteneur">
-            
+            <img src="blé.jpeg" alt="ble" class="article">
+            <h2 class="titre_article">Blé</h2>
+            <div class="button_article">
+                <button onclick= "addproduit('Blé')">Ajouter</button>
+            </div> 
         </div>
         <div class="conteneur">
-            
+            <img src="sorgho.jpeg" alt="sorgho" class="article">
+            <h2 class="titre_article">Sorgho</h2>
+            <div class="button_article">
+                <button onclick= "addproduit('Sorgho')">Ajouter</button>
+            </div> 
         </div>
         <div class="conteneur">
-            
+            <img src="mais.jpeg" alt="mais" class="article">
+            <h2 class="titre_article">MAÏS</h2>
+            <div class="button_article">
+                <button onclick= "addproduit('MAÏS')">Ajouter</button>
+            </div>           
         </div>
     </section>
 
 
     <section class="produit2">
         <div class="conteneur1">
-
+            <img src="tomate.jpeg" alt="tomate" class="article">
+            <h2 class="titre_article">TOMATE </h2>
+            <div class="button_article">
+                <button onclick= "addproduit('TOMATE')">Ajouter</button>
+            </div> 
         </div>
 
         <div class="conteneur1">
-            
+            <img src="aille.jpeg" alt="aile" class="article">
+            <h2 class="titre_article">AILE </h2>
+            <div class="button_article">
+                <button onclick= "addproduit('AILE')">Ajouter</button>
+            </div> 
         </div>
         <div class="conteneur1">
-            
+            <img src="salade.jpeg" alt="mais" class="article">
+            <h2 class="titre_article">Salade</h2>
+            <div class="button_article">
+                <button onclick=  "addproduit('Salade')">Ajouter</button>
+            </div>        
         </div>
         <div class="conteneur1">
-            
+            <img src="oignon.jpeg" alt="mais" class="article">
+            <h2 class="titre_article">OIGNON</h2>
+            <div class="button_article">
+                <button onclick= "addproduit('OIGNON')">Ajouter</button>
+            </div>          
         </div>
         <div class="conteneur1">
-            
+            <img src="riz.jpeg" alt="mais" class="article">
+            <h2 class="titre_article">RIZ</h2>
+            <div class="button_article">
+                <button onclick= "addproduit('RIZ')">Ajouter</button>
+            </div>        
         </div>
     </section>
-
 
     <section class="produit3">
         <div class="achat">
@@ -163,7 +309,9 @@
         <div class="achat">
             <p>Livraisons</p>
         </div>
-    </section> <hr><hr>
+    </section> 
+
+
     <h1>Contact:</h1>
     <section class="footer">
         <div class="div_footer">
